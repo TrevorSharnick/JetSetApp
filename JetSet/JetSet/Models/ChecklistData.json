@@ -1,0 +1,203 @@
+
+{
+    "preEngineTodos": [
+        {
+            "description": "Battery Power",
+            "action": "ON",
+            "done": false
+        },
+        {
+            "description": "Inverter Switch",
+            "action": "STANDBY",
+            "done": false
+        },
+        {
+            "description": "Oxygen Supply",
+            "action": "ON",
+            "done": false
+        },
+        {
+            "description": "VHF Frequency Mode Dial",
+            "action": "TR",
+            "done": false
+        },
+        {
+            "description": "VHF FM Radio",
+            "action": "TR",
+            "done": false
+        },
+        {
+            "description": "UHF Radio",
+            "action": "MAIN",
+            "done": false
+        },
+        {
+            "description": "Canopy",
+            "action": "CLOSE",
+            "done": false
+        }
+        
+    ],
+    
+    "engineStartTodos": [
+        {
+            "description": "Boost Pump Switches (4)",
+            "action": "ON",
+            "done": false
+        },
+        {
+            "description": "APU Start",
+            "action": "ON",
+            "done": false
+        },
+        {
+            "description": "APU Generator Power",
+            "action": "ON",
+            "done": false
+        },
+        {
+            "description": "AC Generator Power (L/R)",
+            "action": "ON",
+            "done": false
+        },
+        {
+            "description": "Throttles (L/R)",
+            "action": "IDLE",
+            "done": false
+        },
+        {
+            "description": "(With engine running) APU Generator Power",
+            "action": "OFF",
+            "done": false
+        },
+        {
+            "description": "APU Start",
+            "action": "OFF",
+            "done": false
+        },
+        {
+            "description": "Enter in Proper Radio Frequencies for each Radio",
+            "action": "LOAD",
+            "done": false
+        }
+    ],
+    
+    "computerSystemTodos": [
+        {
+            "description": "GDU and EGI",
+            "action": "ON",
+            "done": false
+        },
+        {
+            "description": "Attitude Indicator",
+            "action": "UNCAGE",
+            "done": false
+        },
+        {
+            "description": "Left and Right MFCD displays",
+            "action": "DAY/NIGHT",
+            "done": false
+        },
+        {
+            "description": "CICU",
+            "action": "ON",
+            "done": false
+        },
+        {
+            "description": "IFCC",
+            "action": "TEST",
+            "done": false
+        },
+        {
+            "description": "IFCC (HUD BIT Test)",
+            "action": "ENTER (on console)",
+            "done": false
+        },
+        {
+            "description": "Yaw and Pitch SAS Channels",
+            "action": "ON",
+            "done": false
+        },
+        {
+            "description": "T/O Trim Button",
+            "action": "PRESS",
+            "done": false
+        },
+        {
+            "description": "Left MFCD (transfer cartridge data)",
+            "action": "LOAD ALL",
+            "done": false
+        },
+        {
+            "description": "Right MFCD",
+            "action": "CDU",
+            "done": false
+        },
+        {
+            "description": "Center Console Menu",
+            "action": "EXIT",
+            "done": false
+        },
+        {
+            "description": "IFCC Switch",
+            "action": "ON",
+            "done": false
+        },
+        {
+            "description": "Left MFCD",
+            "action": "TAD",
+            "done": false
+        },
+        {
+            "description": "STEER PT",
+            "action": "FLT PLAN",
+            "done": false
+        },
+        {
+            "description": "CMS MODE",
+            "action": "STBY",
+            "done": false
+        },
+        {
+            "description": "Countermeasure Switches (4)",
+            "action": "MIDDLE POSITION",
+            "done": false
+        },
+        {
+            "description": "JTRS Datalink",
+            "action": "ON",
+            "done": false
+        },
+        {
+            "description": "Right MFCD",
+            "action": "NAV",
+            "done": false
+        },
+        {
+            "description": "EGI",
+            "action": "ON",
+            "done": false
+        },
+        {
+            "description": "EAC",
+            "action": "ON",
+            "done": false
+        },
+        {
+            "description": "RDR ALTM",
+            "action": "ON",
+            "done": false
+        },
+        {
+            "description": "IFF Dial",
+            "action": "NORM",
+            "done": false
+        },
+        {
+            "description": "Anti-Collision Lights (Throttle Pinky Switch",
+            "action": "AFT",
+            "done": false
+        }
+        
+    ],
+}
