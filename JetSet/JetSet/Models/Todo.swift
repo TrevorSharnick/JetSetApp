@@ -12,4 +12,10 @@ struct Todo: Identifiable, Codable {
     let description: String
     let action: String
     var done: Bool
+    
+    enum CodingKeys: String, CodingKey {
+        case description
+        case action
+        case done
+    }
 }
