@@ -7,14 +7,6 @@
 
 import SwiftUI
 
-// Conforms to the 'Codable' protocol, which indicates that it can be encoded to/decoded from JSON data
-struct ChecklistData: Codable {
-    // Each of the ChecklistData properties are an array of 'Todo' objects
-    var preEngineTodos: [Todo]
-    var engineStartTodos: [Todo]
-    var computerSystemTodos: [Todo]
-}
-
 struct WarthogDemoTodos: View {
     // Each of these properties hold the checklist items for each of the aircraft's numerous procedural checklists.
     @State private var preEngineTodos: [Todo] = []
@@ -29,7 +21,7 @@ struct WarthogDemoTodos: View {
                 // If it exists, load the file's contents as 'Data'
                 let data = try Data(contentsOf: fileURL)
                 // JSONDecoder attempts to decode the JSON data into an instance of the ChecklistData struct, for each of the checklist procedure todos
-                let checklistData = try JSONDecoder().decode(ChecklistData.self, from: data)
+                let checklistData = try JSONDecoder().decode(Checklist.self, from: data)
                     self._preEngineTodos = State(initialValue: checklistData.preEngineTodos)
                     self._engineStartTodos = State(initialValue: checklistData.engineStartTodos)
                     self._computerSystemTodos = State(initialValue: checklistData.computerSystemTodos)
