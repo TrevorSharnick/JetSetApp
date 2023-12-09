@@ -1,5 +1,5 @@
-//
 //  MenuView.swift
+//
 //  JetSet
 //
 //  Created by Trevor Sharnick on 11/19/23.
@@ -15,34 +15,14 @@ struct MenuView: View {
                 // Allows the HStack of Aircraft profiles to scroll side to side
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 20) {
-                        Spacer() // Centers the first profile
+                        Spacer()
                         // TODO: Redirects the user to their saved jet profile checklist group
-                        Button(action: {
-                            print("Button tapped: Warthog profile")
-                            
-                        }) {
-                            NavigationLink(destination: WarthogDemoTodos()) {
-                                Rectangle()
-                                    .fill(Color.white)
-                                    .frame(width: 300, height: 300)
-                                    .cornerRadius(20)
-                                    .overlay(
-                                        VStack {
-                                            // Aircraft name
-                                            Text("A-10 Warthog")
-                                                .font(.system(size: 24, weight: .bold))
-                                                .foregroundColor(.black)
-                                                .offset(y: -30)
-                                            
-                                            Image("Warthog")
-                                                .resizable()
-                                                .aspectRatio(contentMode: .fill)
-                                                .frame(width: 150, height: 150)
-                                                .offset(y: -30)
-                                            
-                                        }
-                                    )
-                            }
+                        NavigationLink(destination: WarthogDemoTodos()) {
+                            ProfileCard()
+                        }
+                        
+                        NavigationLink(destination: WarthogDemoTodos()) {
+                            ProfileCard()
                         }
                     }
                 }
