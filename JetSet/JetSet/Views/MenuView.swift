@@ -21,9 +21,10 @@ struct MenuView: View {
                             ProfileCard()
                         }
                         
-                        NavigationLink(destination: WarthogDemoTodos()) {
-                            ProfileCard()
-                        }
+                        // Uncomment to demonstrate multiple in list
+//                        NavigationLink(destination: WarthogDemoTodos()) {
+//                            ProfileCard()
+//                        }
                     }
                 }
                 
