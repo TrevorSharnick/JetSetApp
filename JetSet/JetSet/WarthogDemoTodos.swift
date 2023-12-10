@@ -34,18 +34,8 @@ struct WarthogDemoTodos: View {
     var body: some View {
         // The entire view should be enclosed within a list to scroll collectively
         List {
-            // Title Section
-            Section(header: Text("A-10 Procedures")
-                .font(.system(size: 24, weight: .bold))
-                .foregroundColor(.black)
-                .listRowInsets(EdgeInsets())
-            ) { }
-        
             Section {
                 // Pre-Engine Start Checklist section
-                Text("Pre-Engine Start")
-                    .font(.headline)
-                    .foregroundColor(.blue)
                 ForEach ($preEngineTodos) { $todo in
                     HStack {
                         Text(todo.description)
@@ -61,12 +51,12 @@ struct WarthogDemoTodos: View {
                         todo.done.toggle()
                     }
                 }
+            } header: {
+                Text("Pre-Engine Start")
             }
+            
             Section {
                 // Engine Start Checklist section
-                Text("Engine Start")
-                    .font(.headline)
-                    .foregroundColor(.blue)
                 ForEach($engineStartTodos) { $todo in
                     HStack {
                         Text(todo.description)
@@ -81,12 +71,12 @@ struct WarthogDemoTodos: View {
                         todo.done.toggle()
                     }
                 }
+            } header: {
+                Text("Engine Start")
             }
+            
             Section {
                 // Computer Systems Checklist section
-                Text("Computer Systems")
-                    .font(.headline)
-                    .foregroundColor(.blue)
                 ForEach($computerSystemTodos) { $todo in
                     HStack {
                         Text(todo.description)
@@ -101,15 +91,17 @@ struct WarthogDemoTodos: View {
                         todo.done.toggle()
                     }
                 }
+            } header: {
+                Text("Computer Systems")
             }
-            
-            
         }
-        
+        .navigationTitle("A-10 Procedures")
     }
 }
 
 #Preview {
-    WarthogDemoTodos()
+    NavigationStack {
+        WarthogDemoTodos()
+    }
 }
 
