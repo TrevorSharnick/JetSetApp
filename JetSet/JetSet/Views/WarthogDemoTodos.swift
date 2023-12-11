@@ -9,9 +9,9 @@ import SwiftUI
 
 struct WarthogDemoTodos: View {
     // Each of these properties hold the checklist items for each of the aircraft's numerous procedural checklists.
-    @State private var preEngineTodos: [Todo] = []
-    @State private var engineStartTodos: [Todo] = []
-    @State private var computerSystemTodos: [Todo] = []
+    @State private var preEngineTodos: [ChecklistItem] = []
+    @State private var engineStartTodos: [ChecklistItem] = []
+    @State private var computerSystemTodos: [ChecklistItem] = []
     
     // This constructor attempts to load JSON data from the ChecklistData.json file
     init() {
@@ -22,9 +22,9 @@ struct WarthogDemoTodos: View {
                 let data = try Data(contentsOf: fileURL)
                 // JSONDecoder attempts to decode the JSON data into an instance of the ChecklistData struct, for each of the checklist procedure todos
                 let checklistData = try JSONDecoder().decode(Checklist.self, from: data)
-                    self._preEngineTodos = State(initialValue: checklistData.preEngineTodos)
-                    self._engineStartTodos = State(initialValue: checklistData.engineStartTodos)
-                    self._computerSystemTodos = State(initialValue: checklistData.computerSystemTodos)
+                self._preEngineTodos = State(initialValue: [])
+                self._engineStartTodos = State(initialValue: [])
+                self._computerSystemTodos = State(initialValue: [])
             } catch {
                 print("Error loading JSON data: \(error)")
             }
