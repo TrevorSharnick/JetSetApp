@@ -18,7 +18,7 @@ struct MenuView: View {
                         Spacer()
                         // TODO: Redirects the user to their saved jet profile checklist group
                         NavigationLink(destination: WarthogDemoTodos()) {
-                            ProfileCard()
+                            ProfileCard(profile: .preview)
                         }
                         
                         // Uncomment to demonstrate multiple in list
