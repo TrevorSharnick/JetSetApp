@@ -15,6 +15,7 @@
 		BD0D8BF42AD383B5003B7F4D /* JetSetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0D8BF32AD383B5003B7F4D /* JetSetUITests.swift */; };
 		BD0D8BF62AD383B5003B7F4D /* JetSetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0D8BF52AD383B5003B7F4D /* JetSetUITestsLaunchTests.swift */; };
 		BD554BA62B27D91C00031040 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD554BA52B27D91C00031040 /* PreviewData.swift */; };
+		BD7FFDCF2B290B2500D71A1A /* Concorde.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD7FFDCE2B290B2500D71A1A /* Concorde.jpg */; };
 		BD96F0882B0B0D6C00BEA58D /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96F0872B0B0D6C00BEA58D /* MenuView.swift */; };
 		BD96F08A2B0B109300BEA58D /* RadialGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96F0892B0B109300BEA58D /* RadialGradientView.swift */; };
 		BDAB18E92B1939C000B754CC /* WarthogDemoTodos.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB18E82B1939C000B754CC /* WarthogDemoTodos.swift */; };
@@ -55,6 +56,7 @@
 		BD0D8BF32AD383B5003B7F4D /* JetSetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JetSetUITests.swift; sourceTree = "<group>"; };
 		BD0D8BF52AD383B5003B7F4D /* JetSetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JetSetUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BD554BA52B27D91C00031040 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		BD7FFDCE2B290B2500D71A1A /* Concorde.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Concorde.jpg; sourceTree = "<group>"; };
 		BD96F0872B0B0D6C00BEA58D /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		BD96F0892B0B109300BEA58D /* RadialGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialGradientView.swift; sourceTree = "<group>"; };
 		BDAB18E82B1939C000B754CC /* WarthogDemoTodos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarthogDemoTodos.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				BDF85B992B1D394000966A96 /* ChecklistData.json */,
 				BD0D8BDF2AD383B4003B7F4D /* Preview Assets.xcassets */,
 				BDF9E6A32B268F8300EEF21D /* Warthog.jpg */,
+				BD7FFDCE2B290B2500D71A1A /* Concorde.jpg */,
 				BD554BA52B27D91C00031040 /* PreviewData.swift */,
 			);
 			path = "Preview Content";
@@ -287,6 +290,7 @@
 			files = (
 				BDF85B9A2B1D394000966A96 /* ChecklistData.json in Resources */,
 				BD0D8BE02AD383B4003B7F4D /* Preview Assets.xcassets in Resources */,
+				BD7FFDCF2B290B2500D71A1A /* Concorde.jpg in Resources */,
 				BDF9E6A42B268F8300EEF21D /* Warthog.jpg in Resources */,
 				BD0D8BDD2AD383B4003B7F4D /* Assets.xcassets in Resources */,
 			);
