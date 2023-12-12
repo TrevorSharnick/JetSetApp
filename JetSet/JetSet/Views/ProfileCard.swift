@@ -31,6 +31,7 @@ struct ProfileCard: View {
                     AsyncImage(url: imageURL) { image in
                         image.resizable()
                             .aspectRatio(contentMode: .fill)
+                            .overlay { gradient }
                     } placeholder: {
                         placeholder
                     }
@@ -38,10 +39,6 @@ struct ProfileCard: View {
                     placeholder
                 }
             }
-        }
-        .overlay {
-            LinearGradient(colors: [.black.opacity(0.4), .clear],
-                           startPoint: .bottom, endPoint: .center)
         }
         .clipShape(RoundedRectangle(cornerRadius: 20))
     }
