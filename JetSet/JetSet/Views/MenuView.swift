@@ -14,18 +14,21 @@ struct MenuView: View {
         ZStack {
             RadialGradientView().ignoresSafeArea()
             VStack {
-                if !$profiles.isEmpty {
+                if !profiles.isEmpty {
                     // Allows the HStack of Aircraft profiles to scroll side to side
                     ScrollView(.horizontal, showsIndicators: false) {
                         LazyHStack(spacing: 0) {
                             ForEach(profiles) { profile in
                                 // TODO: Redirects the user to their saved jet profile checklist group
-                                ProfileCard(profile: profile)
-                                    .containerRelativeFrame(.horizontal)
+                                NavigationLink {
+                                    ChecklistsView(profile: profile)
+                                } label: {
+                                    ProfileCard(profile: profile)
+                                        .containerRelativeFrame(.horizontal)
+                                }
                             }
                         }
                     }
-                    .scaledToFit()
                     .padding(.vertical)
                 }
                 
@@ -74,7 +77,7 @@ struct MenuView: View {
     }
 }
 #Preview {
-//    NavigationStack {
+    NavigationStack {
         MenuView()
-//    }
+    }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ChecklistItem: Identifiable, Codable {
+struct ChecklistItem: Identifiable, Codable, Hashable {
     let id = UUID()
     let description: String
     let action: String
