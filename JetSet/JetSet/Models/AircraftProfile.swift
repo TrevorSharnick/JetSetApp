@@ -26,6 +26,11 @@ struct AircraftProfile: Codable, Identifiable {
         case image
         case checklists
     }
-    
-} 
+}
 
+/// Decodable container of list of profiles
+extension AircraftProfile {
+    struct Container: Decodable {
+        var aircraftProfiles: [AircraftProfile]
+    }
+}

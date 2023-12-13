@@ -14,3 +14,13 @@ extension AircraftProfile {
     
     static let noImage = AircraftProfile(title: "A-10 Warthog", image: nil, checklists: [])
 }
+
+extension [AircraftProfile] {
+    static var preview: [AircraftProfile] {
+        let url = Bundle.main.url(forResource: "AircraftProfiles", withExtension: "json")!
+        let data = try! Data(contentsOf: url)
+        let decoder = JSONDecoder()
+        let container = try! decoder.decode(AircraftProfile.Container.self, from: data)
+        return container.aircraftProfiles
+    }
+}
