@@ -21,10 +21,10 @@ struct MenuView: View {
                             ProfileCard(profile: .preview)
                         }
                         
-                        // Uncomment to demonstrate multiple in list
-//                        NavigationLink(destination: WarthogDemoTodos()) {
-//                            ProfileCard()
-//                        }
+                       // Demonstrating multiple aircraft in the profile card list
+                       NavigationLink(destination: WarthogDemoTodos()) {
+                           ProfileCard(profile: .concorde)
+                        }
                     }
                 }
                 
