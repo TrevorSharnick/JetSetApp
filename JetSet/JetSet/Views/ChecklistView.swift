@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WarthogDemoTodos: View {
+struct ChecklistView: View {
     // Each of these properties hold the checklist items for each of the aircraft's numerous procedural checklists.
     @State private var preEngineTodos: [ChecklistItem] = []
     @State private var engineStartTodos: [ChecklistItem] = []
@@ -101,7 +101,7 @@ struct WarthogDemoTodos: View {
 
 #Preview {
     NavigationStack {
-        WarthogDemoTodos()
+        ChecklistView()
     }
 }
 
