@@ -17,12 +17,12 @@ struct MenuView: View {
                     HStack(spacing: 20) {
                         Spacer()
                         // TODO: Redirects the user to their saved jet profile checklist group
-                        NavigationLink(destination: WarthogDemoTodos()) {
+                        NavigationLink(destination: ChecklistView()) {
                             ProfileCard(profile: .preview)
                         }
                         
                        // Demonstrating multiple aircraft in the profile card list
-                       NavigationLink(destination: WarthogDemoTodos()) {
+                       NavigationLink(destination: ChecklistView()) {
                            ProfileCard(profile: .concorde)
                         }
                     }
