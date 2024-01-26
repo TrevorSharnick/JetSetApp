@@ -19,7 +19,7 @@
 		BD96F08A2B0B109300BEA58D /* RadialGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96F0892B0B109300BEA58D /* RadialGradientView.swift */; };
 		BDAB18E92B1939C000B754CC /* ChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB18E82B1939C000B754CC /* ChecklistView.swift */; };
 		BDF4C67D2B1E9D7100776D92 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF4C67C2B1E9D7100776D92 /* ChecklistItem.swift */; };
-		BDF85B9A2B1D394000966A96 /* AircraftProfiles.json in Resources */ = {isa = PBXBuildFile; fileRef = BDF85B992B1D394000966A96 /* AircraftProfiles.json */; };
+		BDF85B9A2B1D394000966A96 /* ChecklistData.json in Resources */ = {isa = PBXBuildFile; fileRef = BDF85B992B1D394000966A96 /* ChecklistData.json */; };
 		BDF9E6A02B267ED100EEF21D /* AircraftProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF9E69F2B267ED100EEF21D /* AircraftProfile.swift */; };
 		BDF9E6A42B268F8300EEF21D /* Warthog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BDF9E6A32B268F8300EEF21D /* Warthog.jpg */; };
 		CB5C0E972B24F8EA00F411FE /* ProfileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5C0E962B24F8EA00F411FE /* ProfileCard.swift */; };
@@ -60,7 +60,7 @@
 		BD96F0892B0B109300BEA58D /* RadialGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialGradientView.swift; sourceTree = "<group>"; };
 		BDAB18E82B1939C000B754CC /* ChecklistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistView.swift; sourceTree = "<group>"; };
 		BDF4C67C2B1E9D7100776D92 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
-		BDF85B992B1D394000966A96 /* AircraftProfiles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AircraftProfiles.json; sourceTree = "<group>"; };
+		BDF85B992B1D394000966A96 /* ChecklistData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ChecklistData.json; sourceTree = "<group>"; };
 		BDF9E69F2B267ED100EEF21D /* AircraftProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftProfile.swift; sourceTree = "<group>"; };
 		BDF9E6A32B268F8300EEF21D /* Warthog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Warthog.jpg; sourceTree = "<group>"; };
 		CB5C0E962B24F8EA00F411FE /* ProfileCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCard.swift; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		BD0D8BDE2AD383B4003B7F4D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				BDF85B992B1D394000966A96 /* AircraftProfiles.json */,
+				BDF85B992B1D394000966A96 /* ChecklistData.json */,
 				BD0D8BDF2AD383B4003B7F4D /* Preview Assets.xcassets */,
 				BDF9E6A32B268F8300EEF21D /* Warthog.jpg */,
 				BD554BA52B27D91C00031040 /* PreviewData.swift */,
@@ -289,7 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB5C0EA32B294D9E00F411FE /* Colors.xcassets in Resources */,
-				BDF85B9A2B1D394000966A96 /* AircraftProfiles.json in Resources */,
+				BDF85B9A2B1D394000966A96 /* ChecklistData.json in Resources */,
 				BD0D8BE02AD383B4003B7F4D /* Preview Assets.xcassets in Resources */,
 				BDF9E6A42B268F8300EEF21D /* Warthog.jpg in Resources */,
 				BD0D8BDD2AD383B4003B7F4D /* Assets.xcassets in Resources */,
