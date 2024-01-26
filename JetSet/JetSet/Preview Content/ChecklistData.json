@@ -42,7 +42,6 @@
                             "action": "CLOSE",
                             "done": false
                         }
-                        
                     ]
                 },
                 {
@@ -204,7 +203,7 @@
                             "done": false
                         },
                         {
-                            "description": "Anti-Collision Lights (Throttle Pinky Switch",
+                            "description": "Anti-Collision Lights (Throttle Pinky Switch)",
                             "action": "AFT",
                             "done": false
                         }
@@ -214,3 +213,4 @@
         }
     ]
 }
+
