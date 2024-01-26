@@ -17,7 +17,7 @@
 		BD554BA62B27D91C00031040 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD554BA52B27D91C00031040 /* PreviewData.swift */; };
 		BD96F0882B0B0D6C00BEA58D /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96F0872B0B0D6C00BEA58D /* MenuView.swift */; };
 		BD96F08A2B0B109300BEA58D /* RadialGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96F0892B0B109300BEA58D /* RadialGradientView.swift */; };
-		BDAB18E92B1939C000B754CC /* ChecklistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB18E82B1939C000B754CC /* ChecklistsView.swift */; };
+		BDAB18E92B1939C000B754CC /* ChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB18E82B1939C000B754CC /* ChecklistView.swift */; };
 		BDF4C67D2B1E9D7100776D92 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF4C67C2B1E9D7100776D92 /* ChecklistItem.swift */; };
 		BDF85B9A2B1D394000966A96 /* AircraftProfiles.json in Resources */ = {isa = PBXBuildFile; fileRef = BDF85B992B1D394000966A96 /* AircraftProfiles.json */; };
 		BDF9E6A02B267ED100EEF21D /* AircraftProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF9E69F2B267ED100EEF21D /* AircraftProfile.swift */; };
@@ -58,7 +58,7 @@
 		BD554BA52B27D91C00031040 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		BD96F0872B0B0D6C00BEA58D /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		BD96F0892B0B109300BEA58D /* RadialGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialGradientView.swift; sourceTree = "<group>"; };
-		BDAB18E82B1939C000B754CC /* ChecklistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistsView.swift; sourceTree = "<group>"; };
+		BDAB18E82B1939C000B754CC /* ChecklistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistView.swift; sourceTree = "<group>"; };
 		BDF4C67C2B1E9D7100776D92 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 		BDF85B992B1D394000966A96 /* AircraftProfiles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AircraftProfiles.json; sourceTree = "<group>"; };
 		BDF9E69F2B267ED100EEF21D /* AircraftProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftProfile.swift; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 				CB5C0E962B24F8EA00F411FE /* ProfileCard.swift */,
 				BD96F0892B0B109300BEA58D /* RadialGradientView.swift */,
 				BD0D8BDA2AD383B3003B7F4D /* TitleView.swift */,
-				BDAB18E82B1939C000B754CC /* ChecklistsView.swift */,
+				BDAB18E82B1939C000B754CC /* ChecklistView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -320,7 +320,7 @@
 				BD554BA62B27D91C00031040 /* PreviewData.swift in Sources */,
 				BD0D8BDB2AD383B3003B7F4D /* TitleView.swift in Sources */,
 				BD96F08A2B0B109300BEA58D /* RadialGradientView.swift in Sources */,
-				BDAB18E92B1939C000B754CC /* ChecklistsView.swift in Sources */,
+				BDAB18E92B1939C000B754CC /* ChecklistView.swift in Sources */,
 				BDF9E6A02B267ED100EEF21D /* AircraftProfile.swift in Sources */,
 				BD96F0882B0B0D6C00BEA58D /* MenuView.swift in Sources */,
 				BD0D8BD92AD383B3003B7F4D /* JetSetApp.swift in Sources */,

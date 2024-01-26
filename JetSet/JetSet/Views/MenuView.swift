@@ -21,7 +21,7 @@ struct MenuView: View {
                             ForEach(profiles) { profile in
                                 // TODO: Redirects the user to their saved jet profile checklist group
                                 NavigationLink {
-                                    ChecklistsView(profile: profile)
+                                    ChecklistView(profile: profile)
                                 } label: {
                                     ProfileCard(profile: profile)
                                         .containerRelativeFrame(.horizontal)

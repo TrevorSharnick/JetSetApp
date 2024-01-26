@@ -1,5 +1,5 @@
 //
-//  ChecklistsView.swift
+//  ChecklistView.swift
 //  JetSet
 //
 //  Created by Trevor Sharnick on 11/28/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ChecklistsView: View {
+struct ChecklistView: View {
     @State var profile: AircraftProfile
     
     var body: some View {
@@ -16,10 +16,10 @@ struct ChecklistsView: View {
             ForEach ($profile.checklists, id: \.title) { $checklist in
                 Section {
                     ForEach ($checklist.items) { $item in
-                        HStack {                                      Text(item.description)
+                        HStack {                                      
+                            Text(item.description)
                                 .strikethrough(item.done)
                             Spacer()
-                            
                             Text(item.action)
                                 .strikethrough(item.done)
                             Image(systemName: item.done ? "checkmark.square" : "square")
@@ -43,7 +43,7 @@ struct ChecklistsView: View {
 
 #Preview {
     NavigationStack {
-        ChecklistsView(profile: [AircraftProfile].preview.first!)
+        ChecklistView(profile: [AircraftProfile].preview.first!)
     }
 }
 
