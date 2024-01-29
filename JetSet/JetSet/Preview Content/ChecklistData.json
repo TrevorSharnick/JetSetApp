@@ -1,9 +1,8 @@
 {
     "aircraftProfiles": [
         {
-            "id": "1",
             "title": "A-10 Warthog",
-            "image": "Warthog",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Fairchild_Republic_A-10_Thunderbolt_II_-_32156159151.jpg/600px-Fairchild_Republic_A-10_Thunderbolt_II_-_32156159151.jpg",
             "checklists": [
                 {
                     "title": "Pre-Engine Start",

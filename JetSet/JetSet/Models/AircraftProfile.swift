@@ -8,7 +8,7 @@
 import Foundation
 
 /// AircraftProfile is the model which represents the information displayed on each profile card. It also contains the aircraft's checklist information available when pressing on the corresponding profile card
-struct AircraftProfile: Codable, Identifiable {
+struct AircraftProfile: Codable, Identifiable, Hashable {
     let id = UUID()
     var title: String
     var image: String?
@@ -26,6 +26,11 @@ struct AircraftProfile: Codable, Identifiable {
         case image
         case checklists
     }
-    
-} 
+}
 
+/// Decodable container of list of profiles
+extension AircraftProfile {
+    struct Container: Decodable {
+        var aircraftProfiles: [AircraftProfile]
+    }
+}

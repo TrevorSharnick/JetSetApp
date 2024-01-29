@@ -10,6 +10,7 @@
  */
 
 import SwiftUI
+
 // Extending text to include a custom title font 'JetSet'
 extension Text {
     func titleFont() -> some View {
@@ -20,20 +21,12 @@ extension Text {
     }
 }
 
-
-
 // The background gradient representing the title view, including the JetSet title and a navigation button to redirect to the main menu
 struct TitleView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                RadialGradient(
-                    gradient:
-                        Gradient(colors: [.orange, .green, .cyan, .black]),
-                    center: .center,
-                    startRadius: 20,
-                    endRadius: 500)
-                
+                RadialGradientView()
                 Text("JetSet")
                     .titleFont()
                 // Used overlay to add an airplane icon trailing the bottom curve of the 't' in the title
@@ -52,21 +45,19 @@ struct TitleView: View {
                  3) .alignmentGuide(.trailing) { _ in 20 }: This modifier specifies an alignment guide for the trailing edge of the Image. It shifts the image 20 points to the right from where it would naturally be placed based on the text's baseline.
                  4) alignment: .bottomTrailing: This sets the alignment of the Image within the overlay. In this case, you're aligning the image to the bottom trailing corner of the Text, which helps position it near the bottom curve of the 't' in 'JetSet'.
                  */
-                
-                Button(action: {
-                    
-                }) {
-                    NavigationLink(destination: MenuView()) {
-                        Text("Go to Main Menu")
-                            .font(.headline)
-                            .foregroundColor(.white)
-                            .padding(.horizontal, 20)
-                            .padding(.vertical, 10)
-                            .background(RoundedRectangle(cornerRadius: 10)
-                                .fill(Color.green)
-                                .shadow(color: Color.black.opacity(0.5), radius: 5, x: 0, y: 5)
-                            )
-                    }
+                NavigationLink {
+                    MenuView()
+                } label: {
+                    Text("Go to Main Menu")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 10)
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                            .fill(Color.green)
+                            .shadow(color: Color.black.opacity(0.5), radius: 5, x: 0, y: 5)
+                        )
                 }
                 .offset(x: 0, y: 300)
             }

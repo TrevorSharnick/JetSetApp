@@ -6,13 +6,12 @@
 //
 
 import SwiftUI
-/// ** Passes in an instance of the AircraftProfile struct and the title and imageURL properties from it; displaying them as profile cards in the view:
+/// Passes in an instance of the AircraftProfile struct and the title and imageURL properties from it; displaying them as profile cards in the view:
 struct ProfileCard: View {
     
     let profile: AircraftProfile
     
     var body: some View {
-        
         VStack() {
             Spacer()
             // Aircraft name
@@ -29,42 +28,59 @@ struct ProfileCard: View {
                 /// attempts to unwrap the optional AircraftProfile property (imageURL). If it is not nil, assign its value to url
                 if let imageURL = profile.imageURL {
                     AsyncImage(url: imageURL) { image in
-                        image.resizable()
+                        image
+                            .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .overlay { gradient }
                     } placeholder: {
-                        placeholder
+                        ProgressView()
                     }
                 } else {
                     placeholder
                 }
             }
+            .overlay { gradient }
         }
         .clipShape(RoundedRectangle(cornerRadius: 20))
     }
     
     private var placeholder: some View {
         ZStack {
+            gradient
             Image(systemName: "airplane")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 120)
                 .foregroundStyle(.white)
-            gradient
         }
     }
     
     private var gradient: some View {
-        LinearGradient(colors: [.black.opacity(0.4), .clear], startPoint: .bottom, endPoint: .center)
+        LinearGradient(
+            colors: [.black.opacity(0.4), .clear],
+            startPoint: .bottom,
+            endPoint: .center
+        )
     }
     
 }
 
-struct ProfileCard_Previews: PreviewProvider {
-    static var previews: some View {
-        ZStack {
-            Color.gray.ignoresSafeArea()
-            ProfileCard(profile: .preview)
-        }
+#Preview("Local Image") {
+    ZStack {
+        Color.gray.ignoresSafeArea()
+        ProfileCard(profile: .preview)
+    }
+}
+
+#Preview("Remote Image") {
+    ZStack {
+        Color.gray.ignoresSafeArea()
+        ProfileCard(profile: [AircraftProfile].preview.first!)
+    }
+}
+
+#Preview("No image") {
+    ZStack {
+        Color.gray.ignoresSafeArea()
+        ProfileCard(profile: .noImage)
     }
 }
