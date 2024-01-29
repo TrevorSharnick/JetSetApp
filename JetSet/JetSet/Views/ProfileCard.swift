@@ -34,11 +34,11 @@ struct ProfileCard: View {
                     } placeholder: {
                         ProgressView()
                     }
-                    .overlay { gradient }
                 } else {
                     placeholder
                 }
             }
+            .overlay { gradient }
         }
         .clipShape(RoundedRectangle(cornerRadius: 20))
     }
